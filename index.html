@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link
       rel="stylesheet"
@@ -53,6 +53,108 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mob-open-btn" data-menu-open>
+          <svg width="32" height="22" class="mob-open-btn-icon-1">
+            <use href="./images/icons.svg#icon-menu-btn-mobile-icon-1"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- MOB MENU -->
+      <div class="mob-menu" data-menu>
+        <div class="container mob-menu-container">
+          <div class="mob-menu-wrapp">
+            <button type="button" class="mob-menu-close-btn" data-menu-close>
+              <svg width="8" height="8" class="mob-menu-btn-icon">
+                <use href="./images/icons.svg#icon-modal-btn"></use>
+              </svg>
+            </button>
+
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mob-menu-wrapp-contacts">
+            <address class="mob-menu-address">
+              <ul class="mob-menu-contacts-list list">
+                <li>
+                  <a class="mob-menu-tel-link link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mob-menu-mail-link link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mob-menu-social-list list">
+              <li class="mob-menu-social-list-item">
+                <a
+                  href=""
+                  class="mob-menu-social-list-item-link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg width="24" height="24" class="mob-menu-social-icon">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-social-list-item">
+                <a
+                  href=""
+                  class="mob-menu-social-list-item-link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg width="24" height="24" class="mob-menu-social-icon">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-social-list-item">
+                <a
+                  href=""
+                  class="mob-menu-social-list-item-link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg width="24" height="24" class="mob-menu-social-icon">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-social-list-item">
+                <a
+                  href=""
+                  class="mob-menu-social-list-item-link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg width="24" height="24" class="mob-menu-social-icon">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -128,7 +230,7 @@
         </div>
       </section>
       <!-- ABUOT US -->
-      <section class="about-us">
+      <!-- <section class="about-us">
         <div class="container">
           <h2 class="secondary-title">What are we doing</h2>
           <ul class="about-us-list list">
@@ -158,9 +260,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- OUR TEAM -->
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="secondary-title">Our Team</h2>
           <ul class="our-team-list list">
@@ -414,9 +516,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- CUSTOMERS -->
-      <section class="customers">
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="secondary-title">Customers</h2>
           <ul class="customers-list list">
@@ -494,10 +596,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container-footer container">
         <div class="footer-logo">
           <a class="link logo-footer" href="./index.html"
@@ -507,7 +609,7 @@
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
-        </div>
+        </div> 
 
         <div class="footer-social">
           <p class="footer-social-text">Social media</p>
@@ -563,8 +665,6 @@
           </ul>
         </div>
 
-        <!-- SUBSCRIBE -->
-
         <div class="subscribe-section">
           <p class="subsc-form-pragraf">Subscribe</p>
           <form name="subscribe_form" class="subsc-form">
@@ -586,11 +686,11 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- MODAL WINDOW -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg width="8" height="8" class="modal-close-btn-icon">
@@ -681,7 +781,8 @@
           <button type="submit" class="contact-form-btn">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
