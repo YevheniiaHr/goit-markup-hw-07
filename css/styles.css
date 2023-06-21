@@ -1393,8 +1393,6 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
   }
-}
-@media screen and (min-width: 428px) and (max-width: 1157px) {
   .container-footer {
     gap: 72px;
   }
