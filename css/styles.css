@@ -916,6 +916,13 @@ body {
   color: var(--secondary-background-color-icons);
 }
 
+/* MEADIA */
+@media screen and (max-width: 350px) {
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
 @media screen and (min-width: 428px) {
   .container {
     max-width: 426px;
@@ -1002,7 +1009,9 @@ body {
   .contacts-link:focus {
     color: #404bbf;
   }
-
+  .contacts-link-mail {
+    margin-bottom: 12px;
+  }
   .mob-open-btn {
     display: none;
   }
