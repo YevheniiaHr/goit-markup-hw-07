@@ -388,8 +388,6 @@ body {
   row-gap: 72px;
   column-gap: 16px;
   justify-content: center;
-
-  margin-top: 72px;
 }
 .customers-list-item {
   width: calc((100% - 16px) / 2);
