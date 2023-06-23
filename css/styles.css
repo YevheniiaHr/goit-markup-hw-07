@@ -571,19 +571,17 @@ body {
 }
 /* PORTFOLIO FILTERS */
 .portfolio-container {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
-.navigation-portfolio {
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
-}
+
 .button-list {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 48px;
 }
 .menu-btn {
   font-family: var(--primary-font);
@@ -596,7 +594,7 @@ body {
   cursor: pointer;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  padding: 12px 24px 12px 24px;
+  padding: 8px 16px 8px 16px;
   transition: color var(--transition-duration) var(--transition-timing-function),
     background-color var(--transition-duration)
       var(--transition-timing-function),
@@ -616,11 +614,9 @@ body {
 .items-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
 }
 .picture {
-  width: calc((100% - 2 * 24px) / 3);
+  width: 100%;
 }
 .picture:hover .overlay {
   transform: translate(0, 0);
@@ -1093,6 +1089,19 @@ body {
   .footer-social-text {
     margin-top: 0;
   }
+  /* PORTFOLIO */
+  .button-list {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+  .items-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .picture {
+    width: calc((100% - 1 * 24px) / 2);
+  }
 }
 @media (min-width: 768px) and (max-width: 1157px) {
   .container-customers,
@@ -1354,6 +1363,34 @@ body {
   .subsc-form {
     flex-direction: row;
   }
+  /* PORTFOLIO */
+  .portfolio-container {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+  .button-list {
+    margin-bottom: 72px;
+  }
+
+  .menu-btn {
+    padding: 12px 24px 12px 24px;
+  }
+  /* ITEMS */
+  .items-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .picture {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+  .picture:hover .overlay {
+    transform: translate(0, 0);
+  }
+  .picture:focus .overlay {
+    transform: translate(0, 0);
+  }
 }
 @media screen and (max-width: 427px) {
   .mob-menu-tel-link {
@@ -1386,5 +1423,11 @@ body {
   }
   .container-footer {
     gap: 72px;
+  }
+  .button-list {
+    max-width: 378px;
+  }
+  .items-list {
+    gap: 48px;
   }
 }
