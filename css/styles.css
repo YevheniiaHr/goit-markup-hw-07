@@ -995,6 +995,11 @@ body {
     color: var(--primary-color-text);
     margin-left: auto;
   }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 
   .contacts-link {
     font-weight: 400;
@@ -1002,6 +1007,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--primary-color-text);
+
     transition: color var(--transition-duration)
       var(--transition-timing-function);
   }
@@ -1009,9 +1015,7 @@ body {
   .contacts-link:focus {
     color: #404bbf;
   }
-  .contacts-link-mail {
-    margin-bottom: 12px;
-  }
+
   .mob-open-btn {
     display: none;
   }
@@ -1136,6 +1140,7 @@ body {
   /* HEADER */
 
   .contacts {
+    flex-direction: row;
     display: flex;
     gap: 40px;
   }
